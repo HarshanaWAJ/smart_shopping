@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:smart_shopping/components/my_button.dart';
 import 'package:smart_shopping/components/my_text_field.dart';
+import 'dart:developer';
 
 class MyHome extends StatelessWidget {
   MyHome({super.key});
@@ -119,11 +121,24 @@ class MyHome extends StatelessWidget {
                 ),
 
                 //Sign In Button
+                MyButton(
+                  onTap: UserSignIn,
+                ),
+
+                //Divider
+                //
+                //
+                //
               ],
             ),
           ),
         ),
       ),
     );
+  }
+
+  //sign in method
+  void UserSignIn() {
+    log('User clicked SIGN IN button');
   }
 }
