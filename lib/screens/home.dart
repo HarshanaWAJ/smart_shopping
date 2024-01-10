@@ -122,7 +122,7 @@ class MyHome extends StatelessWidget {
 
                 //Sign In Button
                 MyButton(
-                  onTap: UserSignIn,
+                  onTap: userSignIn,
                 ),
 
                 //Divider
@@ -138,7 +138,7 @@ class MyHome extends StatelessWidget {
   }
 
   //sign in method
-  void UserSignIn() {
+  void userSignIn() {
     log('User clicked SIGN IN button');
   }
 }
